@@ -1,10 +1,10 @@
 ion-content{
-  #body{
+  .body{
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    #body__title{ 
+    .body__title{ 
       display: flex;
       justify-content: center;
       text-transform: uppercase;
@@ -23,7 +23,7 @@ ion-content{
       }
     }
 
-    #body__content{
+    .body__content{
       background-color: #979292;
       padding: 5%;
       margin: 0 10%;

@@ -1,5 +1,5 @@
 ion-content{
-  #header{
+  .header{
     display: flex;
     justify-content: center;
     background-image: url('../../assets/bk_espaco.png');
@@ -24,8 +24,8 @@ ion-content{
     }
   }
 
-  #body{
-    #body__titulo{
+  .body{
+    .body__titulo{
       width: 100%;
       height: 100px;
       display: flex;
@@ -51,7 +51,7 @@ ion-content{
     }
   }
 
-  #body__descricao{
+  .body__descricao{
     font: normal 400 1.2rem "Montserrat", sans-serif;
     padding: 0 7.5%;
     text-align: center;
@@ -63,7 +63,7 @@ ion-content{
     height: 3px;
   }
 
-  #body__estrutura{
+  .body__estrutura{
     h2{
       font: normal 400 1.6rem "Holtwood One SC", serif;
       text-align: center;
@@ -78,7 +78,7 @@ ion-content{
     }
   }
 
-  #body__curiosidade{
+  .body__curiosidade{
     padding: 0 7.5%;
 
     h2{
