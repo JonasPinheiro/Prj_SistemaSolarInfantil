@@ -1,0 +1,66 @@
+ion-content {
+  --background: url('../../assets/bk_espaco.png') no-repeat center center / cover;
+
+  #body{
+    padding: 0 10px;
+  }
+
+  #body div{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  #div__sol{
+    justify-content: center;
+  }
+
+  #div__mercurio{
+    justify-content: start;
+    width: 134px; 
+    height: 134px;
+  }
+
+  #div__venus{
+    justify-content: end;
+    width: 185px; 
+    height: 185px; 
+  }
+
+  #div__terra{
+    justify-content: start;
+    width: 187px; 
+    height: 187px;
+  }
+
+  #div__marte{
+    justify-content: end;
+    width: 146px; 
+    height: 146px;
+  }
+
+  #div__jupiter{
+    justify-content: start;
+    width: 320px; 
+    height: 320px;
+    margin-left: -10%;
+  }
+
+  #div__saturno{
+    justify-content: end;
+    width: 285px; 
+    height: 285px;
+  }
+
+  #div__urano{
+    justify-content: start;
+    width: 175px; 
+    height: 175px; 
+  }
+
+  #div__netuno{
+    justify-content: end;
+    width: 173px; 
+    height: 173px;
+  }
+} 
