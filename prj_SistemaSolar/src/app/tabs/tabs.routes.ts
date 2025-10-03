@@ -13,6 +13,11 @@ export const routes: Routes = [
       },
       {
         path: 'tab2',
+        redirectTo: '/tabs/tab2/1',
+        pathMatch: 'full'
+      },
+      {
+        path: 'tab2/:planet',
         loadComponent: () =>
           import('../tab2/tab2.page').then((m) => m.Tab2Page),
       },
