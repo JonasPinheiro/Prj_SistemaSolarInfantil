@@ -11,7 +11,7 @@ import { IonContent } from '@ionic/angular/standalone';
 export class Tab1Page {
   constructor(private router: Router) {}
 
-  redirecionar(planet: string): void{
+  redirecionar(planet: number): void{
     this.router.navigate([`/tabs/tab2/${planet}`]);
   }
 }
