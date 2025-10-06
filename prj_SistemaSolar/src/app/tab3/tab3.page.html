@@ -6,15 +6,18 @@
     </div>
 
     <div class="body__content">
-      <p>Qual planeta do sistema solar é tão pouco denso (tão leve) que, se existisse um oceano grande o suficiente para o colocar, ele flutuaria?</p>
+      <p>{{ perguntaAtual.question }}</p>
       <div class="body__content__buttons">
-          <button>A - Terra</button>
-          <button>B - Vênus</button>
-          <button>C - Saturno</button>
-          <button>D - Sol</button>
+        @for (alt of perguntaAtual.alternatives; track alt.option; let i = $index) {
+          <button #btnAlternativa (click)="selecionarAlternativa(alt.option)"
+          [disabled]="respondido">
+            {{ letras[i] }} - {{ alt.option }}
+          </button>
+        }
+      
       </div>
     </div>
 
-    <button class="body__btnSkip">Pular pergunta</button>
+    <button class="body__btnSkip" (click)="proximaPergunta()">Pular pergunta</button>
   </div>
 </ion-content>
